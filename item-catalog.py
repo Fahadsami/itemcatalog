@@ -11,7 +11,7 @@ app = Flask(__name__)
 CLIENT_ID = json.loads(open('client_secrets.json', 'r').read())['web']['client_id']
 
 
-engine = create_engine('sqlite:///items.db')
+engine = create_engine('postgresql://catalog:PASSWORD@localhost/catalog')
 Base.metadata.bind = engine
 
 # Create database session
@@ -315,7 +315,7 @@ def gconnect():
 	login_session['access_token'] = credentials.access_token
 	login_session['gplus_id'] = gplus_id
 
-	
+
 	userinfo_url = "https://www.googleapis.com/oauth2/v1/userinfo"
 	params = {'access_token': credentials.access_token, 'alt': 'json'}
 	answer = requests.get(userinfo_url, params=params)
