@@ -1,39 +1,39 @@
-# Udacity Item Catalog
+﻿# Item Catalog
 
-A simple web application that provides a list of items within a variety of categories and integrate third party user registration and authentication. Authenticated users have the ability to post, edit, and delete their own items.
-
-## Set Up
-
-1. Clone the [fullstack-nanodegree-vm repository](https://github.com/udacity/fullstack-nanodegree-vm).
-
-2. Look for the *catalog* folder and replace it with the contents of this respository.
-
-## Usage
-
-Launch the Vagrant VM from inside the *vagrant* folder with:
-
-`vagrant up`
-
-Then access the shell with:
-
-`vagrant ssh`
-
-Then move inside the catalog folder:
-
-`cd /vagrant/catalog`
-
-Then run the application:
-
-`python application.py`
-
-After the last command you are able to browse the application at this URL:
-
-`http://localhost:5000/`
+### Project Overview
+> To Develop an application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
 
 
-## Release History
-* 0.1.0 - Initial release
+### What Will I Learn?
+  * Develop a RESTful web application using the Python framework Flask
+  * Implementing third-party OAuth authentication.
+  * Implementing CRUD (create, read, update and delete) operations.
+  
+### How to Run?
 
-## License
+#### PreRequisites
+  * [Python ~2.7](https://www.python.org/)
+  * [Vagrant](https://www.vagrantup.com/)
+  * [VirtualBox](https://www.virtualbox.org/)
+  
+#### Setup Project:
+  1. Install Vagrant and VirtualBox
+  2. Download or Clone [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository.
+  3. Find the catalog folder and replace it with the content of this current repository, by either downloading or cloning it from
+  [Here](https://github.com/sagarchoudhary96/P5-Item-Catalog).
 
-MIT © [Ricardo Raphael Joson](http://rrjoson.com)
+#### Launch Project
+  1. Launch the Vagrant VM using command:
+  
+  ```
+    $ vagrant up
+  ```
+    ```
+    $ vagrant ssh
+  ```
+  2. Run your application within the VM
+  
+  ```
+    $ python /vagrant/catalog/main.py
+  ```
+  3. Run the application via http://localhost:5000.
